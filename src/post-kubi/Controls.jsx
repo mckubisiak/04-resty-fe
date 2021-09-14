@@ -53,9 +53,8 @@ const Controls = ({ url, jsonInput, onChange, submit }) => {
           onChange={onChange}
         />
         <label htmlFor="DELETE">DELETE</label>
+        <button onClick={submit}>Hit Route!</button>
       </section>
-
-      <button onClick={submit}>Hit Route!</button>
 
       <textarea
         aria-label="request"

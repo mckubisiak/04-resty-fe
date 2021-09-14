@@ -1,5 +1,14 @@
+* {
+  margin: auto;
+  text-align: center;
+}
+
 :global .radio-route {
   margin: 10px;
+}
+
+input[type="radio"] {
+  padding-right: 2vw;
 }
 
 :global .radio-route input[type="radio"] {

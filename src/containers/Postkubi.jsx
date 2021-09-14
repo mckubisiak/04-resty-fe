@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Controls from '../post-kubi/Controls';
 import Display from '../post-kubi/Display';
+import Header from '../post-kubi/Header';
 import { apiRouter } from '../services/apiRouter';
 // import Display from '../components/post-kubi/Display';
 
 export default class Postkubi extends Component {
   state = {
-    url: 'API here',
+    url: 'Type url here',
     jsonInput: 'json input',
     route: '',
-    routeResponse: { text: 'howdy partner' },
+    routeResponse: { text: 'howdy partner, valid requests populate here' },
   };
 
   handleChange = (event) => {
@@ -25,6 +26,7 @@ export default class Postkubi extends Component {
   render() {
     return (
       <>
+        <Header />
         <Controls 
           url={this.state.url} 
           jsonInput={this.state.jsonInput}
