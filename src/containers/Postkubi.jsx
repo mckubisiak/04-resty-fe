@@ -17,7 +17,6 @@ export default class Postkubi extends Component {
   };
 
   handleSubmit = async () => {
-    console.log(this.state);
     const response = 
     await apiRouter(this.state.url, this.state.route, this.state.jsonInput);
     this.setState({ routeResponse: response });

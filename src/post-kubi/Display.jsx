@@ -8,7 +8,8 @@ const Display = ({ routeResponse }) => {
 };
 
 Display.propTypes = {
-  routeResponse: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+  routeResponse: 
+  PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
 };
 
 export default Display;
